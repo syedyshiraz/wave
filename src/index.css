@@ -1,0 +1,81 @@
+@import '@xyflow/react/dist/style.css';
+@import "tailwindcss";
+
+@theme {
+  --color-github-dark: #010409;
+  --color-github-bg: #0d1117;
+  --color-github-card: #161b22;
+  --color-github-border: #30363d;
+  --color-github-borderMuted: #21262d;
+  --color-github-text: #c9d1d9;
+  --color-github-textBright: #f0f6fc;
+  --color-github-muted: #8b949e;
+  --color-github-accent: #58a6ff;
+  --color-github-success: #238636;
+  --color-github-successAccent: #2ea44f;
+  --color-github-warning: #d29922;
+  --color-github-danger: #f85149;
+}
+
+/* Core layout overrides */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #010409;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  overflow: hidden;
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+  border-left: 1px solid #30363d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b949e;
+}
+
+/* Custom node visual tweaks */
+.react-flow__node {
+  border-radius: 6px;
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background-color: #30363d;
+  border: 2px solid #58a6ff;
+}
+
+.react-flow__handle:hover {
+  background-color: #58a6ff;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2px;
+}
+
+.react-flow__controls-button {
+  background-color: #161b22 !important;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d !important;
+  fill: #c9d1d9 !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #21262d !important;
+}
